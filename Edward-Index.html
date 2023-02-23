@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDWARD-REVOU-SE-PROJECT</title>
-    <link rel="stylesheet" type="text/css" href="Edward-index.css">
+    <link rel="stylesheet" type="text/css" href="css/Edward-index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <!-- CONTENT BODY -->
@@ -19,8 +19,8 @@
             </div>
             <div class="container-navbar-2">
                 <ul class="menu">
-                    <li id="menu-home">Home</li>
-                    <li id="menu-my-profile">My Profile</li>
+                    <li id="menu-home" onclick="homeclick()">Home</li>
+                    <li id="menu-my-profile" onclick="ourprofile()">Our Profile</li>
                     <li id="menu-portofolio">Portofolio</li>
                     <li id="menu-message-us">Message US</li>
                 </ul>
@@ -28,7 +28,7 @@
         </div>
     </nav>
     <div class="container-content">
-        <div class="container-content1">
+        <div class="container-content1" id="myform">
             <h1 class="container-content1-header">Form Belajar</h1>
             <p class="container-content1-subtitle">Ini adalah website latihan pertama</p>
             <div class="container-form">
@@ -41,7 +41,7 @@
                     </ul>
                 </div>
                 <div class="input-form">
-                    <input type="text" name="name" id="input-name">
+                    <input placeholder="Nama" type="text" name="name" id="input-name">
                     <input type="date" name="date" id="input-born-date">
                     <div id="input-gender">
                         <input type="radio" name="gender" value="Laki-laki" id="input-gender-male">
@@ -51,11 +51,13 @@
                         <label for="Perempuan">Perempuan</label>
                     </div>
                     
-                    <textarea name="message" id="input-textarea" cols="50" rows="10"></textarea>
+                    <textarea placeholder="Pesan" name="message" id="input-textarea" cols="70" rows="10"></textarea>
                 </div>
-
             </div>
+            <input type="submit" name="submit" id="submit-button"/>
+            
         </div>
+        
         <div class="container-content2">
             <table class="table">
                 <thead>
@@ -70,7 +72,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Ada Lovelace</td>
+                        <td><span id="sender-name"></span> Lovelace</td>
                         <td>December 10, 1815</td>
                         <td>Perempuan</td>
                         <td>Belajar Buat Website</td>
@@ -106,7 +108,6 @@
         </div>
     </div>
     
-    
 </body>
 <!-- FOOTER -->
 <footer>
@@ -114,4 +115,5 @@
         <p>EDWARD SHANDY PRATAMA</p>
     </div>
 </footer>
+<script src="js/html.js"></script>
 </html>
