@@ -1,0 +1,296 @@
+/* Eric Meyer's reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+.body {
+  background-color: whitesmoke;
+}
+
+/* NAVIGATION BAR */
+.container-navbar {
+  display: flex;
+  position: fixed;
+  background-color: black;
+  border-bottom: 1px solid white;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.container-navbar-1 {
+  flex: 1;
+}
+.container-navbar-2 {
+  flex: 3;
+  align-self: center;
+  margin-right: 30px;
+}
+#logo-revou-id {
+  margin-top: 5px;
+  margin-left: 20px;
+  width: auto;
+  height: 60px;
+}
+.menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: right;
+}
+
+.menu > li {
+  font-weight: 400;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 30px 10px 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  transition: 0.7s ease-in-out;
+  
+
+}
+.menu >li:hover {
+    background-color: darkgrey;
+
+}
+
+/* CONTENT 1 */
+.container-profile {
+    margin: 100px 0px 20px 0px;
+    padding-bottom: 30px;
+    border-bottom: 5px solid black;
+    border-style: double;
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px 0px 10px 40px;
+}
+
+p {
+    margin-left: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px 0px 10px 40px;
+}
+
+#japan-town {
+    margin-left: 40px;
+    width: 1366px;
+    height: 578px;
+    
+}
+
+/* CONTENT 2 */
+.content-2{
+  background-color: whitesmoke;
+  border-bottom: 5px solid black;
+  border-style: double;
+}
+.container-headquarter {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+#jakarta {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+#bandung {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+#surabaya {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.container-headquarter {
+  margin: 40px 0px 40px 40px
+}
+
+.container-headquarter > h1 {
+  font-size: 30px;
+}
+
+/* CONTENT 3 */
+.content-3 {
+  display: flex;
+  margin: 40px 0px 40px 40px;
+
+}
+
+#form-messageus {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* RESPONSIVE MEDIA QUERY */
+/* Tampilan untuk layar kecil */
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  /* NAVIGATION BAR MOBILE */
+.container-navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  background-color: black;
+  border-bottom: 1px solid white;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.container-navbar-2 {
+  align-self: center;
+  margin-right: 0px;
+}
+#logo-revou-id {
+  margin:10px 0px 20px 0px;
+  width: auto;
+  height: 200px;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+}
+
+.menu > li {
+  font-weight: 400;
+  font-size: 50px;
+  margin: 20px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 40px;
+  padding: 10px 450px 10px 450px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  transition: 0.7s ease-in-out;
+  
+
+}
+.menu >li:hover {
+    background-color: darkgrey;
+
+}
+
+/* CONTENT 1 MOBILE*/
+.container-profile {
+  display: flex;
+  flex-direction: column;
+  margin: 800px 0px 20px 0px;
+  padding-bottom: 30px;
+  border-bottom: 5px solid black;
+  border-style: double;
+  background-color: whitesmoke;
+}
+.section-1 {
+  display: flex;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 300;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10px 10px 10px 40px;
+}
+
+p {
+  margin-left: 40px;
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10px 0px 10px 40px;
+}
+
+#japan-town {
+  margin-left: 40px;
+  width: 1366px;
+  height: 578px;
+  
+}
+
+/* CONTENT 2 MOBILE */
+.section-2 {
+  display: flex;
+  flex-direction: row;
+}
+.content-2{
+  background-color: whitesmoke;
+  border-bottom: 5px solid black;
+  border-style: double;
+}
+
+#jakarta {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+}
+
+#bandung {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+}
+
+#surabaya {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+}
+
+.container-headquarter {
+  margin: 400px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-headquarter > h1 {
+  font-size: 30px;
+}
+/* CONTENT 3 MOBILE*/
+.content-3 {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0px 40px 40px;
+
+}
+
+#form-messageus {
+  display: flex;
+  flex-direction: column;
+}
+
+
+}
